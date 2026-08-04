@@ -3,11 +3,11 @@
   src: url("../assets/fonts/Amazon.ttf");
 }
 @font-face {
-  font-family: amazon bold;
+  font-family: amazon-bold;
   src: url("../assets/fonts/Amazon\ Bold.ttf");
 }
 @font-face {
-  font-family: amazone italic;
+  font-family: amazon-italic;
   src: url("../assets/fonts/Amazon\ Italic.ttf");
 }
 * {
@@ -42,6 +42,7 @@ nav {
   width: 80px;
   height: 15px;
   margin-right: 8px;
+  cursor: pointer;
 }
 .right-nav img {
   width: 28px;
@@ -59,9 +60,7 @@ nav {
   border-radius: 6px;
 }
 
-.right-nav a:nth-child(1),
-.right-nav a:nth-child(3),
-.right-nav a:nth-child(4) {
+.rouned-100 {
   width: 40px;
   height: 40px;
   display: flex;
@@ -69,26 +68,24 @@ nav {
   justify-content: center;
 }
 
-.right-nav a:nth-child(1):hover,
-.right-nav a:nth-child(3):hover,
-.right-nav a:nth-child(4):hover {
+.rouned-100:hover {
   border-radius: 50%;
   background-color: #fff;
 }
-.right-nav a:nth-child(5){
-    margin-left: 5px;
-    padding: 10px 10px;
-    background-color: #1E82D5;
-    border-radius: 6px;
-    color: white;
+.button {
+  margin-left: 5px;
+  padding: 10px 10px;
+  background-color: #1e82d5;
+  border-radius: 6px;
+  color: white;
 }
-.right-nav a:nth-child(5):hover{
-    background-color: #339bf0;
-    box-shadow: 0 0 15px #339bf0;
+.button:hover {
+  background-color: #339bf0;
+  box-shadow: 0 0 15px #339bf0;
 }
-.main{
-    height: 100vh;
-    background-image: url("../assets/images/main-banner.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.main {
+  height: 100vh;
+  background-image: url("../assets/images/main-banner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
