@@ -18,11 +18,17 @@
 body {
   font-family: amazon;
   height: 100vh;
+  background-color: rgb(7, 7, 37);
 }
 .flex {
   display: flex;
 }
-
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
 .rouned-100 {
   width: 40px;
   height: 40px;
@@ -90,10 +96,21 @@ nav {
     width: 2px;
     height: 15px;
     background: white;
+    margin: 2px;
 }
 .main {
   height: 100vh;
-  background-image: url("../assets/images/main-banner.jpeg");
+  background-image: url("../assets/images/main-banner1.avif");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+}
+.aside-div .logo{
+  width: 120px;
+  top: 90px;
+  left: 20px;
+}
+.aside-div img{
+  width: 280px;
+  top: 140px;
+  left: 30px;
 }
