@@ -31,21 +31,23 @@ body {
   justify-content: center;
 }
 
-.rouned-100:hover {
+.nav-bar .rouned-100:hover {
   border-radius: 50%;
   background-color: #fff;
   color: black;
 }
-.button {
+.join-prime-btn {
   margin-left: 5px;
   padding: 10px 10px;
   background-color: #1e82d5;
   border-radius: 6px;
   color: white;
+  font-weight: bold;
 }
-.button:hover {
+.nav-bar .join-prime-btn:hover {
   background-color: #339bf0;
   box-shadow: 0 0 15px #339bf0;
+  color: white;
 }
 
 nav {
@@ -54,11 +56,12 @@ nav {
 .nav-bar {
   width: 94%;
   height: 60px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(0, 0, 0, 0.2);
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   border-radius: 0 0 20px 20px;
+  backdrop-filter: blur(10px);
 }
 .left-nav,
 .right-nav {
@@ -69,19 +72,25 @@ nav {
   margin-right: 8px;
   cursor: pointer;
 }
+.right-nav img{
+  width: 30px;
+}
 .nav-bar a {
   color: white;
   text-decoration: none;
   padding: 10px 10px;
 }
-.left-nav a:hover,
-.En:hover {
+.nav-bar a:hover {
   padding: 10px 10px;
   background-color: white;
   color: #141921;
   border-radius: 8px;
 }
-
+.divider{
+    width: 2px;
+    height: 15px;
+    background: white;
+}
 .main {
   height: 100vh;
   background-image: url("../assets/images/main-banner.jpeg");
