@@ -48,65 +48,152 @@ body {
   color: white;
   gap: 13px;
 }
-.hero-prime-movie-name:hover{
-  display:block;
+
+.hero-prime-original {
+  width: 100px;
 }
-.hero-prime-original{
-  width:100px;
-}
-.hero-prime-movie-name{
+.hero-prime-movie-name {
   width: 250px;
 }
-.ranking-details{
-  /* align-items: center; */
-  gap: 40px;
+.ranking-details {
+  align-items: center;
+  color: #37f1a3;
+  gap: 10px;
 }
-.hero-movie-description{
+.ranking-details .fbl-icon {
+  color: #37f1a3;
+}
+.ranking-details > p {
+  font-weight: bold;
+}
+.hero-movie-description {
   width: 500px;
   font-size: 16px;
   color: #fff;
   text-align: justify;
-  display:none;  
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 5s ease-in-out;
+  overflow: hidden;
+  max-height: 0;
 }
-.hero-group-btn{
+.hero-prime-movie-name:hover ~ .hero-movie-description {
+  visibility: visible;
+  transform: translateY(0px);
+  max-height: 200px;
+  transition-duration: .5s;
+}
+.hero-group-btn {
   gap: 5px;
 }
-.join-prime-watch-btn{
-  width: 120px;
-  height: 50px;
+.join-prime-watch-btn {
+  width: 130px;
+  height: 62px;
   font-size: 18px;
   font-weight: 600;
   padding: 5px 5px;
-  background-color: #33373D;
+  background-color: #33373d;
   border: none;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   margin-right: 10px;
 }
-.join-prime-watch-btn:hover{
+.join-prime-watch-btn:hover {
   background-color: white;
   color: #141921;
   cursor: pointer;
 }
-.join-add-btn, .join-info-btn{
-  width:50px;
-  height: 50px;
-  font-size: 25px;
+.join-add-btn,
+.join-info-btn {
+  width: 62px;
+  height: 62px;
+  font-size: 30px;
   border-radius: 50%;
   border: none;
-  background-color: #33373D;
+  background-color: #33373d;
   color: white;
   transition: all 0.5s ease-in-out;
 }
-.join-add-btn:hover, .join-info-btn:hover{
+.join-add-btn:hover,
+.join-info-btn:hover {
   background-color: white;
   color: #141921;
   cursor: pointer;
-  scale: 1.2;
+  scale: 1.1;
 }
-.hero-prime-membership{
+
+.join-add-btn::after{
+    content: "Watchlist";
+    position: absolute;
+    bottom: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #111;
+    padding: 10px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    visibility: hidden;
+    transition: .3s;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.join-add-btn::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid;
+    border-color: #fff transparent transparent transparent;
+    visibility: hidden;
+    transition: .3s;
+    opacity: 0;
+}
+
+.join-add-btn:hover::after{
+  opacity: 1;
+    visibility: visible;
+}
+
+.join-info-btn::after{
+    content: "Details";
+    position: absolute;
+    bottom: 120%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #111;
+    padding: 10px 12px;
+    border-radius: 5px;
+    white-space: nowrap;
+    visibility: hidden;
+    transition: .3s;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.join-info-btn::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 8px solid;
+    border-color: #fff transparent transparent transparent;
+    visibility: hidden;
+    transition: .3s;
+}
+
+.join-info-btn:hover::after{
+    visibility: visible;
+}
+
+.hero-prime-membership {
   gap: 10px;
 }
-.hero-prime-membership .fbl-icon{
-  color: #FFD62C;
+.hero-prime-membership .fbl-icon {
+  color: #ffd62c;
 }
