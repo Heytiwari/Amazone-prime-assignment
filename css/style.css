@@ -2,19 +2,23 @@
   font-family: amazone;
   src: url("../assets/fonts/Amazon.ttf");
 }
+
 @font-face {
   font-family: amazone-bold;
   src: url("../assets/fonts/Amazon\ Bold.ttf");
 }
+
 @font-face {
   font-family: amazone-italic;
   src: url("../assets/fonts/Amazon\ Italic.ttf");
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
   font-family: amazone;
@@ -22,12 +26,15 @@ body {
   background-color: rgb(4, 4, 16);
   overflow-x: hidden;
 }
+
 .flex {
   display: flex;
 }
+
 .relative {
   position: relative;
 }
+
 .absolute {
   position: absolute;
 }
@@ -40,6 +47,7 @@ body {
   background-size: contain;
   cursor: pointer;
 }
+
 .hero-section {
   height: 100%;
   flex-direction: column;
@@ -52,20 +60,25 @@ body {
 .hero-prime-original {
   width: 100px;
 }
+
 .hero-prime-movie-name {
   width: 250px;
 }
+
 .ranking-details {
   align-items: center;
   color: #37f1a3;
   gap: 10px;
 }
+
 .ranking-details .fbl-icon {
   color: #37f1a3;
 }
-.ranking-details > p {
+
+.ranking-details>p {
   font-weight: bold;
 }
+
 .hero-movie-description {
   width: 500px;
   font-size: 16px;
@@ -77,15 +90,18 @@ body {
   overflow: hidden;
   max-height: 0;
 }
-.hero-prime-movie-name:hover ~ .hero-movie-description {
+
+.hero-prime-movie-name:hover~.hero-movie-description {
   visibility: visible;
   transform: translateY(0px);
   max-height: 200px;
   transition-duration: 0.5s;
 }
+
 .hero-group-btn {
   gap: 5px;
 }
+
 .join-prime-watch-btn {
   width: 130px;
   height: 62px;
@@ -98,11 +114,13 @@ body {
   border-radius: 8px;
   margin-right: 10px;
 }
+
 .join-prime-watch-btn:hover {
   background-color: white;
   color: #141921;
   cursor: pointer;
 }
+
 .join-add-btn,
 .join-info-btn {
   width: 62px;
@@ -114,6 +132,7 @@ body {
   color: white;
   transition: all 0.5s ease-in-out;
 }
+
 .join-add-btn:hover,
 .join-info-btn:hover {
   background-color: white;
@@ -137,10 +156,9 @@ body {
   transition: 0.3s;
   font-size: 15px;
   font-weight: bold;
-  opacity: 0;
 }
 
-.join-add-btn::before {
+/* .join-add-btn::before {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -151,10 +169,9 @@ body {
   visibility: hidden;
   transition: 0.3s;
   opacity: 0;
-}
+} */
 
 .join-add-btn:hover::after {
-  opacity: 1;
   visibility: visible;
 }
 
@@ -175,7 +192,7 @@ body {
   font-weight: bold;
 }
 
-.join-info-btn::before {
+/* .join-info-btn::before {
   content: "";
   position: absolute;
   bottom: 100%;
@@ -185,7 +202,7 @@ body {
   border-color: #fff transparent transparent transparent;
   visibility: hidden;
   transition: 0.3s;
-}
+} */
 
 .join-info-btn:hover::after {
   visibility: visible;
@@ -194,76 +211,52 @@ body {
 .hero-prime-membership {
   gap: 10px;
 }
+
 .hero-prime-membership .fbl-icon {
   color: #ffd62c;
 }
+
+h3 {
+  color: white;
+  margin: 0 0 15px 45px;
+}
+
 .card {
   margin: 0 45px;
   gap: 20px;
 }
+
 .card-background {
-  background-image: url("../assets/images/section-2/1.avif");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   width: 300px;
-  height: 180px;
+  height: 160px;
   border-radius: 10px;
   overflow: hidden;
   border-radius: 7px;
+  cursor: pointer;
   flex-direction: column;
   justify-content: space-between;
-  
-}
-.card-background2 {
-  background-image: url("../assets/images/section-2/2.avif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
-  border-radius: 7px;
-  flex-direction: column;
-  justify-content: space-between;
-  
+  transition: all 1s ease-in-out;
 }
 
-.card-background3 {
-  background-image: url("../assets/images/section-2/3.avif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
-  border-radius: 7px;
-  flex-direction: column;
-  justify-content: space-between;
-  
+.card-background:hover {
+  transform: scaleX(1.5) scaleY(1.5);
 }
 
-.card-background4 {
-  background-image: url("../assets/images/section-2/4.avif");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 300px;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
-  border-radius: 7px;
-  flex-direction: column;
-  justify-content: space-between;
-  
-}
 .new-episode-label {
-  width: 120px;
-  height: 25px;
+  width: 95px;
+  height: 20px;
   background-color: white;
-  padding: 3px 8px;
+  padding: 3px 4px;
+  font-size: 12px;
   font-weight: bold;
+  letter-spacing: 0.5px;
   border-radius: 0 10px 0 5px;
   align-self: flex-end;
 }
+
 .platform-badge {
   width: 20px;
   height: 20px;
