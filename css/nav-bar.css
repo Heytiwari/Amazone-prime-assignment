@@ -48,6 +48,8 @@ nav {
   font-size: 14px;
   font-weight: 600;
   width: max-content;
+  padding: 10px 10px;
+  border-radius: 8px;
 }
 .language-box {
   width: 700px;
@@ -67,14 +69,13 @@ nav {
   column-gap: 30px;
   opacity: 0;
   visibility: hidden;
-  backdrop-filter: blur(20px);
-  transition: all 1s ease;
+  backdrop-filter: blur(30px);
+  transition: all 0.5s ease;
 }
+
 .language-box > span:hover {
   background-color: #fff;
   color: #000;
-  padding: 10px 10px;
-  border-radius: 8px;
 }
 nav:has(.language:hover) + .hero .language-box,
 .hero:has(.language-box:hover) .language-box {
@@ -109,7 +110,43 @@ nav:has(.language:hover) + .hero .language-box,
   background-color: #fff;
   color: black;
 }
+.profile-account-details p {
+  color: gray;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.profile-account-details {
+  position: absolute;
+  /* background-color: red; */
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 70px;
+  right: 0;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  display: grid;
+  padding: 30px;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.profile-account-details span{
+  
+  padding: 10px 10px;
+  border-radius: 8px;
+}
+.profile-account-details > span:hover{
+  background-color: #fff;
+  color: #000;
+}
 
+nav:has(.profile-details:hover) + .hero .profile-account-details,
+.hero:has(.profile-account-details:hover) .profile-account-details {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5 ease-in;
+}
 .join-prime-btn {
   margin-left: 5px;
   padding: 10px 10px;
