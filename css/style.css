@@ -55,6 +55,7 @@ body {
   margin: 0 45px;
   color: white;
   gap: 13px;
+  position: relative;
 }
 
 .hero-prime-original {
