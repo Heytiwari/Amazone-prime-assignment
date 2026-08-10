@@ -218,7 +218,13 @@ body {
 
 h3 {
   color: white;
-  margin: 0 0 15px 45px;
+  margin: 0 0 20px 45px;
+  font-size: 20px;
+}
+h3 a{
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
 }
 
 .card {
@@ -239,6 +245,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   transition: all 1s ease-in-out;
+  margin-bottom: 30px;
 }
 
 .card-background:hover {
@@ -262,4 +269,52 @@ h3 {
   height: 20px;
   align-self: flex-end;
   margin: 0 15px 10px 0;
+}
+.first:hover{
+  transform: scaleX(1.5) scaleY(1.5) translateX(25px);
+}
+.last:hover{
+  transform: scaleX(1.5) scaleY(1.5) translateX(-25px);
+}
+.card2 {
+  margin: 0 15px;
+  gap: 40px;
+  justify-content: center;
+}
+
+.card-background2 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 300px;
+  height: 160px;
+  border-radius: 10px;
+  overflow: hidden;
+  border-radius: 7px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 1s ease-in-out;
+}
+
+/* .card-background2:hover {
+  transform: scaleX(1.5) scaleY(1.5);
+} */
+.platform-badge2 {
+  width: 40px;
+  height: 30px;
+  align-self: flex-end;
+  margin: 0 15px 10px 0;
+}
+.main-heading{
+  /* align-items: center; */
+  gap: 20px;
+}
+.main-heading a svg{
+  color: white;
+}
+.section-card-num{
+  width: 0;
+  margin-right: 15px;
+  align-content: center;
 }
