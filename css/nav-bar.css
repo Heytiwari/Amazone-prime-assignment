@@ -79,6 +79,8 @@ nav:has(.search:hover) + .hero .search-item,
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
+  position: fixed;
+  z-index: 9999;
 }
 
 .language-box span {
@@ -119,6 +121,8 @@ nav:has(.language:hover) + .hero .language-box,
   opacity: 1;
   visibility: visible;
   transition: all 0.5 ease-in;
+  position: fixed;
+  z-index: 9999;
 }
 
 .nav-bar a {
@@ -231,6 +235,8 @@ nav:has(.categories:hover) + .hero .categories-items,
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease-in;
+  position: fixed;
+  z-index: 9999;
 }
 
 .profile-account-details p {
@@ -267,6 +273,8 @@ nav:has(.profile-details:hover) + .hero .profile-account-details,
   opacity: 1;
   visibility: visible;
   transition: all 0.5 ease-in;
+  position: fixed;
+  z-index: 9999;
 }
 .join-prime-btn {
   margin-left: 5px;
