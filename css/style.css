@@ -39,12 +39,16 @@ body {
   position: absolute;
 }
 
+
+/* =========================
+   HERO
+========================= */
+
 .hero {
   width: 100%;
   height: 100%;
   background-image: url("../assets/images/main-banner1.avif");
   background-repeat: no-repeat;
-  /* background-size: cover; */
   object-fit: contain;
   background-position: right;
   cursor: pointer;
@@ -219,6 +223,11 @@ body {
   color: #ffd62c;
 }
 
+
+/* =========================
+   SECTIONS
+========================= */
+
 section {
   width: 100%;
   padding: 0 35px;
@@ -244,29 +253,44 @@ h3 i {
 }
 
 
+/* =========================
+   NORMAL CARDS
+========================= */
+
 .card {
   gap: 25px;
   width: 100%;
 }
 
-
 .card-background {
   width: 280px;
   height: 160px;
-  overflow: hidden;
+
+  position: relative;
+
+  /*
+    IMPORTANT:
+    hidden ki jagah visible
+    rakha hai taaki movie-details
+    card ke bahar open ho sake.
+  */
+  overflow: visible;
+
   border-radius: 7px;
   cursor: pointer;
-  transition: 0.3s ease;
-}
 
+  transition: transform 0.3s ease;
+
+  z-index: 1;
+}
 
 .card-background > img:first-child {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 7px;
 }
-
 
 .new-episode-label {
   top: 0;
@@ -279,7 +303,6 @@ h3 i {
   border-radius: 0 0 0 3px;
 }
 
-
 .platform-badge {
   width: 30px;
   right: 15px;
@@ -288,23 +311,223 @@ h3 i {
 }
 
 
-.card-background:hover {
-  transform: scale(1.3);
-  z-index: 10;
-}
+/* =========================
+   CARD HOVER
+========================= */
 
+.card-background:hover {
+  transform: scale(1.4);
+  z-index: 100;
+}
 
 .card-background.first:hover {
-  transform-origin: left center;
+  transform-origin: left top;
 }
-
 
 .card-background.last:hover {
-  transform-origin: right center;
+  transform-origin: right top;
 }
+
+.card-background:not(.first):not(.last):hover {
+  transform-origin: center top;
+}
+
 .card-background:hover .new-episode-label {
   display: none;
 }
+
+
+/* =========================
+   MOVIE DETAILS
+========================= */
+
+.movie-details {
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  background: #000;
+  color: #fff;
+  box-sizing: border-box;
+  border-radius: 0 0 12px 12px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  z-index: 9999;
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease,
+    padding 0.3s ease;
+}
+
+
+/* HOVER PAR DETAILS OPEN */
+
+.card-background:hover .movie-details {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  padding: 10px 20px 18px;
+}
+
+
+/* =========================
+   TITLE
+========================= */
+
+.movie-details h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+
+/* =========================
+   WATCH FREE
+========================= */
+
+.watch-free {
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.check {
+  width: 10px;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #0796ff;
+  color: #000;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.movie-actions {
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+
+/* PLAY BUTTON */
+
+.play-button {
+  height: 35px;
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #111;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+
+/* ROUND BUTTON */
+
+.action-circle {
+  width: 37px;
+  height: 37px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: #292929;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.action-circle i{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.action-circle:hover {
+  background: #414141;
+}
+
+
+/* =========================
+   INFORMATION
+========================= */
+
+.movie-info {
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #999;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* NEW EPISODE */
+
+.new-episode {
+  padding: 3px 5px;
+  background: #fff;
+  color: #111;
+  border-radius: 2px;
+  font-size: 8px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+
+/* AGE */
+
+.age-rating {
+  padding: 3px 6px;
+  background: #555;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.years-seasons,.years-seasons span{
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.movie-description {
+  margin: 0;
+  color: #ddd;
+  font-size: 10px;
+  line-height: 1.15;
+  font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
 
 .main-heading {
   gap: 20px;
@@ -314,9 +537,16 @@ h3 i {
   color: white;
 }
 
+
+/* =========================
+   TOP PRIME MOVIES
+========================= */
+
 .top-prime-movies {
   margin: 0 15px;
+
   gap: 40px;
+
   justify-content: center;
 }
 
@@ -324,27 +554,43 @@ h3 i {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   width: 300px;
   height: 160px;
+
   border-radius: 10px;
   overflow: hidden;
+
   border-radius: 7px;
+
   cursor: pointer;
+
   transition: all 0.5s ease-in-out;
 }
 
 .card-background2:hover {
   transform: scale(1.3);
 }
+
 .card-background2:hover .new-episode-label {
   display: none;
 }
+
+
+/* =========================
+   SECTION CARD NUMBER
+========================= */
 
 .section-card-num {
   width: 0;
   margin-right: 15px;
   align-content: center;
 }
+
+
+/* =========================
+   CARD 3
+========================= */
 
 .card3 {
   margin: 0 0px;
@@ -354,19 +600,25 @@ h3 i {
 .card-background3 {
   width: 300px;
   height: 519px;
+
   border-radius: 7px;
+
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
-  transition: width 0.5s ease;
 
+  overflow: hidden;
+
+  transition: width 0.5s ease;
 }
-.card-background3 img{
+
+.card-background3 img {
   width: 100%;
   height: 100%;
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   border-radius: 7px;
 }
 
@@ -375,58 +627,87 @@ h3 i {
   z-index: 10;
 } */
 
-
 .card-background3:hover {
   width: 900px;
   z-index: 100;
 }
 
-
 .card-background3.last:hover {
   width: -900px;
 }
+
 .card-background3:hover .new-episode-label {
   display: none;
 }
-.see-more-btn{
+
+
+/* =========================
+   SEE MORE
+========================= */
+
+.see-more-btn {
   display: flex;
   justify-content: center;
 }
-.see-more-btn-btn{
+
+.see-more-btn-btn {
   display: flex;
   justify-content: center;
+
   padding: 20px 20px;
+
   font-size: 20px;
   font-weight: bold;
-  background-color: #33373D;
+
+  background-color: #33373d;
+
   border: none;
-  color: #FFFFFF;
+
+  color: #ffffff;
+
   border-radius: 10px;
+
   cursor: pointer;
 }
-.see-more-btn-btn:hover{
+
+.see-more-btn-btn:hover {
   background-color: #fff;
   color: #000;
 }
-footer{
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
   height: 200px;
+
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
+
   gap: 20px;
 }
-footer .footer-logo{
+
+footer .footer-logo {
   width: 100px;
   display: flex;
 }
-.footer-contact-details{
+
+.footer-contact-details {
   display: flex;
+
   justify-content: center;
+
   color: rgb(196, 195, 195);
+
   gap: 10px;
 }
-.footer-contact-details a{
+
+.footer-contact-details a {
   text-decoration: none;
-  color: #90DFFE;
+  color: #90dffe;
 }
