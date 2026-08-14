@@ -265,9 +265,7 @@ h3 i {
 .card-background {
   width: 280px;
   height: 160px;
-
   position: relative;
-
   /*
     IMPORTANT:
     hidden ki jagah visible
@@ -275,12 +273,9 @@ h3 i {
     card ke bahar open ho sake.
   */
   overflow: visible;
-
-  border-radius: 7px;
   cursor: pointer;
-
+  border-radius: 7px;
   transition: transform 0.3s ease;
-
   z-index: 1;
 }
 
@@ -300,7 +295,7 @@ h3 i {
   padding: 1px 3px;
   font-size: 14px;
   font-weight: bold;
-  border-radius: 0 0 0 3px;
+  border-radius: 0 5px 0 3px;
 }
 
 .platform-badge {
@@ -334,6 +329,9 @@ h3 i {
 
 .card-background:hover .new-episode-label {
   display: none;
+}
+.card-background:hover img{
+  border-radius:7px 7px 0 0;
 }
 
 

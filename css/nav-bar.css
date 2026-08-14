@@ -50,7 +50,6 @@ nav {
   position: relative;
 }
 .search-item {
-  position: absolute;
   top: 70px;
   right: 250px;
   width: 450px;
@@ -95,7 +94,7 @@ nav:has(.search:hover) + .hero .search-item,
   height: 400px;
   position: absolute;
   top: 70px;
-  right: 0;
+  right: 40px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 0 20px;
   color: #fff;
@@ -160,7 +159,7 @@ nav:has(.language:hover) + .hero .language-box,
   border-radius: 10px;
   position: absolute;
   top: 70px;
-  right: 0;
+  right: 40px;
   gap: 20px;
   backdrop-filter: blur(20px);
   opacity: 0;
@@ -249,7 +248,7 @@ nav:has(.categories:hover) + .hero .categories-items,
   position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   top: 70px;
-  right: 0;
+  right: 40px;
   backdrop-filter: blur(20px);
   border-radius: 10px;
   display: grid;
