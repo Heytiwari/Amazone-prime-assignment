@@ -1,0 +1,44 @@
+@media (min-width: 992px) and (max-width: 1199px){
+    .nav-bar{
+        width: 96%;
+        height: 55px;
+        padding: 0 15px;
+    }
+    .left-nav img{
+        width: 70px;
+    }
+    .nav-bar a{
+        padding: 7px 7px;
+        font-size: 14px;
+    }
+    .divider{
+        height: 16px;
+        margin: 1px;
+    }
+    .categories-icon{
+        height: 18px;
+        width: 18px;
+    }
+    .right-nav img{
+        width: 25px;
+    }
+    .right-nav .join-prime-btn{
+        font-size: 12px;
+    }
+}
+@media (max-width: 991px){
+    .nav-actions{
+         /* position: fixed;  */
+    }
+    .first-nav{
+        display: none;
+    }
+    .second-nav{
+        display: block;
+    }
+}
+@media (min-width: 991px){
+    .second-nav{
+        display: none;
+    }
+}

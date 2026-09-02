@@ -5,15 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prime Video: Watch movies, TV shows, sports, and live TV</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/nav-bar.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="icon" href="https://m.media-amazon.com/images/G/01/digital/video/DVUI/favicons/favicon-196x196.png"
         sizes="196x196" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="css/media.css" type="text/css">
 </head>
 
 <body>
-    <nav class="flex">
+    <nav class="first-nav flex">
         <div class="nav-bar flex">
             <div class="left-nav flex">
                 <img src="assets/images/Amazone-logo.png" alt="">
@@ -29,8 +30,9 @@
                 <a class="rounded-100 search flex" href=""><i class="ri-search-line"></i></a>
                 <a class="language" href="">EN &nbsp;<i class="ri-arrow-down-s-line"></i></a>
 
-                <a class="rounded-100 categories flex" href=""><svg class="fbl-icon _30dE3d _1a_Ljt AuzObd"
-                        viewBox="0 0 24 24" height="24" width="24" role="img" aria-hidden="true">
+                <a class="rounded-100 categories flex" href=""><svg
+                        class="fbl-icon categories-icon _30dE3d _1a_Ljt AuzObd" viewBox="0 0 24 24" height="24"
+                        width="24" role="img" aria-hidden="true">
                         <title>Categories Remaster</title><svg fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M4.580 3.047 C 3.859 3.185,3.199 3.848,3.044 4.592 C 2.905 5.257,3.105 5.912,3.596 6.404 C 4.393 7.200,5.607 7.200,6.404 6.404 C 7.200 5.607,7.200 4.393,6.404 3.596 C 5.913 3.106,5.277 2.914,4.580 3.047 M11.580 3.047 C 10.859 3.185,10.199 3.848,10.044 4.592 C 9.789 5.816,10.751 7.000,12.000 7.000 C 13.080 7.000,14.000 6.080,14.000 5.000 C 14.000 4.477,13.790 3.983,13.404 3.596 C 12.913 3.106,12.277 2.914,11.580 3.047 M18.580 3.047 C 17.859 3.185,17.199 3.848,17.044 4.592 C 16.789 5.816,17.751 7.000,19.000 7.000 C 19.920 7.000,20.768 6.310,20.956 5.408 C 21.095 4.743,20.895 4.088,20.404 3.596 C 19.913 3.106,19.277 2.914,18.580 3.047 M4.580 10.047 C 4.236 10.113,3.883 10.310,3.596 10.596 C 2.800 11.393,2.800 12.607,3.596 13.404 C 4.393 14.200,5.607 14.200,6.404 13.404 C 7.200 12.607,7.200 11.393,6.404 10.596 C 5.913 10.106,5.277 9.914,4.580 10.047 M11.580 10.047 C 10.707 10.214,10.000 11.087,10.000 12.000 C 10.000 12.920,10.690 13.768,11.592 13.956 C 12.816 14.211,14.000 13.249,14.000 12.000 C 14.000 11.477,13.790 10.983,13.404 10.596 C 12.913 10.106,12.277 9.914,11.580 10.047 M18.580 10.047 C 17.707 10.214,17.000 11.087,17.000 12.000 C 17.000 12.920,17.690 13.768,18.592 13.956 C 19.816 14.211,21.000 13.249,21.000 12.000 C 21.000 11.477,20.790 10.983,20.404 10.596 C 19.913 10.106,19.277 9.914,18.580 10.047 M4.580 17.047 C 3.859 17.185,3.199 17.848,3.044 18.592 C 2.789 19.816,3.751 21.000,5.000 21.000 C 5.920 21.000,6.768 20.310,6.956 19.408 C 7.095 18.743,6.895 18.088,6.404 17.596 C 5.913 17.106,5.277 16.914,4.580 17.047 M11.580 17.047 C 10.859 17.185,10.199 17.848,10.044 18.592 C 9.789 19.816,10.751 21.000,12.000 21.000 C 13.080 21.000,14.000 20.080,14.000 19.000 C 14.000 18.477,13.790 17.983,13.404 17.596 C 12.913 17.106,12.277 16.914,11.580 17.047 M18.580 17.047 C 17.859 17.185,17.199 17.848,17.044 18.592 C 16.789 19.816,17.751 21.000,19.000 21.000 C 20.080 21.000,21.000 20.080,21.000 19.000 C 21.000 18.477,20.790 17.983,20.404 17.596 C 19.913 17.106,19.277 16.914,18.580 17.047 "
@@ -39,6 +41,19 @@
                     </svg></a>
                 <a class="rounded-100 profile-details flex" href=""><img src="assets/images/login-img.svg" alt=""></a>
                 <a class="join-prime-btn" href="">Join Prime</a>
+            </div>
+        </div>
+    </nav>
+    <nav class="second-nav">
+        <div class="nav-actions flex">
+            <a href="">Menu<i class="ri-arrow-down-s-line"></i></a>
+
+            <img src="assets/images/Amazone-logo.png" alt="">
+
+            <div class="nav-tools flex">
+                <a class="rounded-100 search flex" href=""><i class="ri-search-line"></i></a>
+                <a class="lang language rounded-100" href="">EN &nbsp;<i class="ri-arrow-down-s-line"></i></a>
+                <a class="rounded-100 profile-details flex" href=""><img src="assets/images/login-img.svg" alt=""></a>
             </div>
         </div>
     </nav>
@@ -357,7 +372,7 @@
 
                     </div>
 
-                    <div class="movie-info ">
+                    <div class="movie-info flex">
 
                         <span class="new-episode">
                             NEW EPISODE
@@ -423,8 +438,60 @@
                         clip-path="url(#clipPath_«rj»)"></rect>
                 </svg>
             </div>
-            <div class="card-background2 relative" style="background-image: url('assets/images/section-3/1.jpg');">
+            <div class="card-background2 relative">
+                <img src="assets/images/section-3/1.jpg" alt="">
                 <p class="new-episode-label absolute">NEW SERIES</p>
+                <div class="movie-details absolute">
+
+                    <h2>Playground</h2>
+
+                    <div class="watch-free flex">
+                        <span class="check flex">✓</span>
+                        <span>Watch for free</span>
+                    </div>
+
+                    <div class="movie-actions flex">
+
+                        <button class="play-button flex">
+                            <span class="play-icon"><i class="ri-play-large-fill"></i></span>
+                            <span>Play S5 E15</span>
+                        </button>
+
+                        <button class="action-circle flex">
+                            <i class="ri-film-line"></i>
+                        </button>
+
+                        <button class="action-circle add-button flex">
+                            <i class="ri-add-large-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="movie-info flex">
+
+                        <span class="new-episode">
+                            NEW EPISODE
+                        </span>
+
+                        <span class="age-rating">
+                            U/A 16+
+                        </span>
+
+                        <div class="years-seasons">
+                            <span>2026</span>
+
+                            <span>5 seasons</span>
+                        </div>
+
+                    </div>
+
+                    <p class="movie-description">
+                        Season 5 • Playground S5 is India's gaming
+                        reality show. 15 players, 3 teams, mentors
+                        Elvish, Tejaswi & Aarush battle to crown the...
+                    </p>
+
+                </div>
             </div>
             <div class="section-card-num">
                 <svg width="80" height="100" viewBox="0 0 126 240" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
@@ -447,7 +514,8 @@
                         clip-path="url(#clipPath_«rk»)"></rect>
                 </svg>
             </div>
-            <div class="card-background2 relative" style="background-image: url('assets/images/section-3/2.jpg');">
+            <div class="card-background2 relative">
+                <img src="assets/images/section-3/2.jpg" alt="">
                 <p class="new-episode-label absolute">NEW MOVIE</p>
             </div>
             <div class="section-card-num">
@@ -471,8 +539,9 @@
                         clip-path="url(#clipPath_«rl»)"></rect>
                 </svg>
             </div>
-            <div class="card-background2 relative" style="background-image: url('assets/images/section-3/3.jpg');">
-                <p class="new-episode-label absolute">SEASON FINALE</p>
+            <div class="card-background2 relative">
+                <img src="assets/images/section-3/3.jpg" alt="">
+                <p class="new-episode-label absolute">NEW SERIES</p>    
             </div>
         </div>
     </section>
@@ -481,18 +550,203 @@
         <div class="card flex">
             <div class="card-background relative first">
                 <img src="assets/images/section-4/1.avif" alt="">
+                <div class="movie-details absolute">
+
+                    <h2>Made In India: A Titan Story</h2>
+
+                    <div class="watch-free flex">
+                        <span class="check flex">✓</span>
+                        <span>Watch for free</span>
+                    </div>
+
+                    <div class="movie-actions flex">
+
+                        <button class="play-button flex">
+                            <span class="play-icon"><i class="ri-play-large-fill"></i></span>
+                            <span>Play S1 E1</span>
+                        </button>
+
+                        <button class="action-circle flex">
+                            <i class="ri-film-line"></i>
+                        </button>
+
+                        <button class="action-circle add-button flex">
+                            <i class="ri-add-large-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="movie-info flex">
+
+                        <span class="age-rating">
+                            U/A 13+
+                        </span>
+
+                        <div class="years-seasons">
+                            <span>2026</span>
+
+                            <span>3 seasons</span>
+                        </div>
+
+                    </div>
+
+                    <p class="movie-description">
+                        Season 1・A visionary man Xerxes Desai with his team turns humiliation into history by building
+                        India's first world-class watch brand.
+                    </p>
+
+                </div>
             </div>
             <div class="card-background relative">
                 <img src="assets/images/section-4/2.avif" alt="">
+                <div class="movie-details absolute">
+
+                    <h2>Ek Badnaam Aashram</h2>
+
+                    <div class="watch-free flex">
+                        <span class="check flex">✓</span>
+                        <span>Watch for free</span>
+                    </div>
+
+                    <div class="movie-actions flex">
+
+                        <button class="play-button flex">
+                            <span class="play-icon"><i class="ri-play-large-fill"></i></span>
+                            <span>Play S1 E1</span>
+                        </button>
+
+                        <button class="action-circle flex">
+                            <i class="ri-film-line"></i>
+                        </button>
+
+                        <button class="action-circle add-button flex">
+                            <i class="ri-add-large-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="movie-info flex">
+
+                        <span class="age-rating">
+                            A
+                        </span>
+
+                        <div class="years-seasons">
+                            <span>2020</span>
+
+                            <span>4 seasons</span>
+                        </div>
+
+                    </div>
+
+                    <p class="movie-description">
+                        Season 1・In Kashipur, Baba Nirala commands devotion from the lower class, including Pammi. A
+                        skeleton's discovery threatens to expose his dark secrets.
+                    </p>
+
+                </div>
             </div>
             <div class="card-background relative">
                 <img src="assets/images/section-4/3.webp" alt="">
                 <p class="new-episode-label absolute">TOP ACTION</p>
+                <div class="movie-details absolute">
+
+                    <h2>Mirzapur</h2>
+
+                    <div class="watch-free flex">
+                        <span>First episode free</span>
+                    </div>
+
+                    <div class="movie-actions flex">
+
+                        <button class="play-button flex">
+                            <span class="play-icon"><i class="ri-play-large-fill"></i></span>
+                            <span>Play S1 E1</span>
+                        </button>
+
+                        <button class="action-circle flex">
+                            <i class="ri-film-line"></i>
+                        </button>
+
+                        <button class="action-circle add-button flex">
+                            <i class="ri-add-large-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="movie-info flex">
+                        <span class="new-episode">
+                            TRENDING
+                        </span>
+
+                        <span class="age-rating">
+                            U/A 13+
+                        </span>
+
+                        <div class="years-seasons">
+                            <span>2026</span>
+
+                            <span>3 seasons</span>
+                        </div>
+
+                    </div>
+
+                    <p class="movie-description">
+                        Season 1・A mafia don, his power-hungry son, and a clash with a righteous family ignite a brutal
+                        war for control in the lawless city of Mirzapur.
+                    </p>
+                </div>
             </div>
             <div class="card-background last relative">
                 <img src="assets/images/section-4/4.avif" alt="">
                 <p class="new-episode-label absolute">TOP ACTION</p>
+                <div class="movie-details absolute">
+
+                    <h2>The Family Man</h2>
+
+                    <div class="watch-free flex">
+                        <span>First episode free</span>
+                    </div>
+
+                    <div class="movie-actions flex">
+
+                        <button class="play-button flex">
+                            <span class="play-icon"><i class="ri-play-large-fill"></i></span>
+                            <span>Play S1 E1</span>
+                        </button>
+
+                        <button class="action-circle flex">
+                            <i class="ri-film-line"></i>
+                        </button>
+
+                        <button class="action-circle add-button flex">
+                            <i class="ri-add-large-line"></i>
+                        </button>
+
+                    </div>
+
+                    <div class="movie-info flex">
+
+                        <span class="age-rating">
+                            A
+                        </span>
+
+                        <div class="years-seasons">
+                            <span>2019</span>
+
+                            <span>3 seasons</span>
+                        </div>
+
+                    </div>
+
+                    <p class="movie-description">
+                        Season 1・Edgy thriller following a middle-class agent balancing his job at a secret national
+                        security cell and protecting his family.
+                    </p>
+                </div>
             </div>
+
+        </div>
         </div>
     </section>
     <section>
@@ -516,12 +770,12 @@
             </div>
         </div>
     </section>
-    <section class="see-more-btn">
-        <button class="see-more-btn-btn" type="submit">See More</button>
+    <section class="see-more-btn flex">
+        <button class="see-more-btn-btn flex" type="submit">See More</button>
     </section>
-    <footer>
-        <img class="footer-logo" src="assets/images/footer-logo.png" alt="">
-        <div class="footer-contact-details">
+    <footer class="flex">
+        <img class="footer-logo flex" src="assets/images/footer-logo.png" alt="">
+        <div class="footer-contact-details flex">
             <a href="">Terms and Privacy Notice</a>
             <a href="">Send us feedback</a>
             <a href="">Help</a>

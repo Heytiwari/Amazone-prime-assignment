@@ -40,9 +40,7 @@ body {
 }
 
 
-/* =========================
-   HERO
-========================= */
+/* HERO */
 
 .hero {
   width: 100%;
@@ -57,7 +55,7 @@ body {
 .hero-section {
   height: 100%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   margin: 0 3px;
   color: white;
   position: relative;
@@ -217,6 +215,7 @@ body {
 
 .hero-prime-membership {
   gap: 10px;
+  margin-bottom: 30px;
 }
 
 .hero-prime-membership .fbl-icon {
@@ -224,9 +223,7 @@ body {
 }
 
 
-/* =========================
-   SECTIONS
-========================= */
+/* SECTIONS */
 
 section {
   width: 100%;
@@ -253,9 +250,7 @@ h3 i {
 }
 
 
-/* =========================
-   NORMAL CARDS
-========================= */
+/* NORMAL CARDS */
 
 .card {
   gap: 25px;
@@ -306,11 +301,10 @@ h3 i {
 }
 
 
-/* =========================
-   CARD HOVER
-========================= */
+/* CARD HOVER */
 
 .card-background:hover {
+  border-radius:7px 7px 0 0;
   transform: scale(1.4);
   z-index: 100;
 }
@@ -335,9 +329,7 @@ h3 i {
 }
 
 
-/* =========================
-   MOVIE DETAILS
-========================= */
+/* MOVIE DETAILS */
 
 .movie-details {
   top: 100%;
@@ -362,7 +354,8 @@ h3 i {
 
 /* HOVER PAR DETAILS OPEN */
 
-.card-background:hover .movie-details {
+.card-background:hover .movie-details,
+.card-background2:hover .movie-details{
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -370,21 +363,17 @@ h3 i {
 }
 
 
-/* =========================
-   TITLE
-========================= */
+/* TITLE */
 
 .movie-details h2 {
   margin: 0 0 8px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2;
   font-weight: 700;
 }
 
 
-/* =========================
-   WATCH FREE
-========================= */
+/* WATCH FREE */
 
 .watch-free {
   align-items: center;
@@ -407,9 +396,7 @@ h3 i {
 }
 
 
-/* =========================
-   ACTION BUTTONS
-========================= */
+/* ACTION BUTTONS */
 
 .movie-actions {
   width: 100%;
@@ -463,9 +450,7 @@ h3 i {
 }
 
 
-/* =========================
-   INFORMATION
-========================= */
+/* INFORMATION */
 
 .movie-info {
   align-items: center;
@@ -506,9 +491,7 @@ h3 i {
   margin-right: 10px;
 }
 
-/* =========================
-   DESCRIPTION
-========================= */
+/* DESCRIPTION*/
 
 .movie-description {
   margin: 0;
@@ -523,9 +506,7 @@ h3 i {
 }
 
 
-/* =========================
-   MAIN HEADING
-========================= */
+/* MAIN HEADING */
 
 .main-heading {
   gap: 20px;
@@ -536,34 +517,27 @@ h3 i {
 }
 
 
-/* =========================
-   TOP PRIME MOVIES
-========================= */
+/* TOP PRIME MOVIES */
 
 .top-prime-movies {
   margin: 0 15px;
-
   gap: 40px;
-
   justify-content: center;
 }
 
 .card-background2 {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
   width: 300px;
   height: 160px;
-
   border-radius: 10px;
   overflow: hidden;
-
   border-radius: 7px;
-
   cursor: pointer;
-
   transition: all 0.5s ease-in-out;
+}
+.card-background2 img{
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-background2:hover {
@@ -574,10 +548,7 @@ h3 i {
   display: none;
 }
 
-
-/* =========================
-   SECTION CARD NUMBER
-========================= */
+/* SECTION CARD NUMBER */
 
 .section-card-num {
   width: 0;
@@ -586,9 +557,7 @@ h3 i {
 }
 
 
-/* =========================
-   CARD 3
-========================= */
+/* CARD 3 */
 
 .card3 {
   margin: 0 0px;
@@ -598,21 +567,16 @@ h3 i {
 .card-background3 {
   width: 300px;
   height: 519px;
-
   border-radius: 7px;
-
   background-repeat: no-repeat;
   background-size: cover;
-
   overflow: hidden;
-
   transition: width 0.5s ease;
 }
 
 .card-background3 img {
   width: 100%;
   height: 100%;
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -639,32 +603,21 @@ h3 i {
 }
 
 
-/* =========================
-   SEE MORE
-========================= */
+/* SEE MORE */
 
 .see-more-btn {
-  display: flex;
   justify-content: center;
 }
 
 .see-more-btn-btn {
-  display: flex;
   justify-content: center;
-
   padding: 20px 20px;
-
   font-size: 20px;
   font-weight: bold;
-
   background-color: #33373d;
-
   border: none;
-
   color: #ffffff;
-
   border-radius: 10px;
-
   cursor: pointer;
 }
 
@@ -674,34 +627,23 @@ h3 i {
 }
 
 
-/* =========================
-   FOOTER
-========================= */
+/* FOOTER */
 
 footer {
   height: 200px;
-
-  display: flex;
   flex-direction: column;
-
   align-items: center;
   justify-content: center;
-
   gap: 20px;
 }
 
 footer .footer-logo {
   width: 100px;
-  display: flex;
 }
 
 .footer-contact-details {
-  display: flex;
-
   justify-content: center;
-
   color: rgb(196, 195, 195);
-
   gap: 10px;
 }
 
